@@ -1,0 +1,35 @@
+/**
+ * @link https://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space
+ */
+
+ html,
+ body {
+    height: 100%;
+    margin: 0;
+ }
+ 
+ .oblique {
+    font-style: oblique;
+ }
+ 
+ .italic {
+    font-style: italic;
+ }
+
+.App-font-mono {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 10pt;
+  color: #555;
+  font-weight: bold;
+}
+
+/* JSON highlighter 
+   pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; } */
+.number,
+.boolean,
+.null { font-weight: bold; }
+.string { color: #800; }
+.number { color: #080; }
+.boolean { color: #080; }
+.null { color: #080; }
+.key { color: black; }

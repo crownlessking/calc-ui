@@ -1,0 +1,189 @@
+.home {
+  -js-display: flex;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.home-history {
+  margin: 36px 0 0 0;
+  padding: 0;
+  border-bottom: solid 2px #6495ed;
+  flex: 1 1 auto;
+  -js-display: flex;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto
+}
+
+.home-history-content {
+  overflow-y: auto; /* triggers scroll bar */
+  width: 100%;
+}
+
+/* JSON display in calc history */
+.home-history-content pre {
+  font-family: 'Inconsolata', monospace;
+  font-size: 12pt;
+  line-height: 20px;
+}
+
+/* Wrapper for both the input field and the button */
+footer
+.home-input-container {
+  /*flex: 0 0 40px;*/
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.home-footer {
+  min-height: 40px;
+  -webkit-order: 3;
+  order: 3;
+  position: relative;
+  -webkit-flex: none;
+  flex: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-input-all-items {
+  -webkit-align-items: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  max-width: 100%;
+  min-height: 40px;
+  position: relative;
+  padding: 5px 10px;
+}
+
+.home-copyable-area {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* keeps input label to the left */
+.home-label {
+  float: left;
+  margin: 5px 5px;
+}
+
+/*
+  DO NOT TOUCH THIS CLASS (do not add or remove anything rules)
+  forces the input field to stretch for remaining window width
+*/
+.home-input-wrap-style {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.home-input-wrap {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  line-height: 20px;
+  min-height: 30px;
+  min-width: 0;
+  outline: none;
+  width: inherit;
+  will-change: width;
+}
+
+/* Div wrap for items that are dynamically spawned through javascript */
+.home-input-spawns {
+  position: relative;
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+}
+.home-input-spawns-style {
+  padding-right: 0;
+}
+
+/* Text field at the bottom of page */
+.home-input,
+.home-input-div-editable {
+  font-family: monospace;
+  font-size: 16px;
+  width: 100%;
+  max-height: 0px;
+  padding: 2px 5px;
+  color: blue;
+  background-color: #f9f9f9;
+}
+.home-input:focus,
+.home-input-div-editable:focus {
+  outline: none;
+}
+
+.home-input {
+  height: 30px;
+}
+
+.home-input-div-editable {
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.home-input-div-editable-style {
+  padding-top: 5px;
+  max-height: 100px;
+  min-height: 30px;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Calc history element */
+.home-h-e {
+  font-family: 'Inconsolata', monospace;
+  /*font-family: 'Alegreya', serif; /* Best */
+  font-size: 16pt;
+  letter-spacing: 0.0625em;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.home-h-e:nth-child(odd) {
+  background-color: #E9E9E9;
+}
+
+/* Calc history expression */
+.home-h-exp {
+  float: left;
+}
+
+/* Calc history result */
+.home-h-res {
+  float: right;
+}
+
+/* Enter button at the bottom of page */
+.home-enter {
+  float: right;
+  font-size: 12pt;
+  font-weight: bold;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 25px;
+  background-color: #6495ed;
+  margin: 0 10px;
+}
+.home-enter:hover,
+.home-enter:focus {
+  color: yellow;
+}
